@@ -1,0 +1,15 @@
+{
+  "name": "xantios/docker",
+  "description": "A Simple to use docker API client in PHP",
+  "type": "library",
+  "license": "proprietary/BSD4",
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "authors": [
+    {
+      "name": "Xantios Krugor",
+      "email": "git@xantios.nl"
+    }
+  ]
+}

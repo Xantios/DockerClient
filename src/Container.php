@@ -23,10 +23,21 @@ class Container {
         return substr($this->config->Name, 1);
     }
 
-    public function env() {
-        return $this->keyValueParser(
+    public function env($key = '') {
+        $kv = $this->keyValueParser(
             $this->config->Config->Env
         );
+
+        if ($key !== '') {
+
+            if (isset($kv[$key])) {
+                return $kv[$key];
+            }
+
+            return false;
+        }
+
+        return $kv;
     }
 
     public function mounts() {

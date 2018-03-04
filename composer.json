@@ -11,5 +11,10 @@
       "name": "Xantios Krugor",
       "email": "git@xantios.nl"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "Xantios\\Docker\\": "src/"
+    }
+  }
 }
